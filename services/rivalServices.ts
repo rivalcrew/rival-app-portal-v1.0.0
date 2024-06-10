@@ -10,19 +10,19 @@ export async function getMatchesByUserId(id:string) : Promise<Match[]>{
     return [];
 }
 
-export async function getRivalByMatches( matches:Match[]) : Promise<Boolean>{
+// masso comment bceaus forgot what is this for
+// export async function getRivalByMatches( matches:Match[]) : Promise<>{
 
-    //make list variable
-    // loop match and save to list
-    matches.forEach((match) => {
-        const result =  MatchRequest.findById(match.id);
-        if (result != null) {
-            return true;
-        }
-        return false;
-        console.log(match);
-    });
+//     //make list variable
+//     // loop match and save to list
+//     matches.forEach((match) => {
+//         const result =  MatchRequest.findById(match.id);
+//         if (result != null) {
+//             return true;
+//         }
+//         return false;
+//     });
     
-}
+// }
 
 
